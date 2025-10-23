@@ -1,0 +1,60 @@
+<!DOCTYPE html> <!-- Define o tipo de documento como HTML5 -->
+<html lang="en"> <!-- Define que a linguagem principal da página é inglês -->
+
+<head>
+  <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 (suporta acentos e símbolos especiais) -->
+  <title>Login</title> <!-- Título que aparece na aba do navegador -->
+  <link rel="stylesheet" href="style_novo.css"> <!-- Importa o arquivo CSS externo para estilizar a página -->
+</head>
+
+<body>
+  <!-- partial:index.partial.html --> <!-- Comentário apenas informativo do autor do código -->
+
+  <nav>
+    <!-- Seção de navegação da página (usada para representar uma área de navegação dentro de uma página. Ou seja: ela serve para agrupar links de navegação que levam a outras partes do site ou a páginas externas.)-->
+    <a href="#"> <!-- Link (neste caso não leva a lugar nenhum, pois o href é "#") -->
+      <img src="logo.png" alt="logo">
+      <!-- Imagem do logo da Netflix -->
+    </a>
+  </nav>
+
+  <div class="form-login"> <!-- Div que envolve todo o formulário de login -->
+    <h2>Bem-vindo de<br> volta!</h2> <!-- Título da seção de login -->
+
+    <form action="gestao1.html"> <!-- Início do formulário. O "action" é "#", ou seja, não envia para lugar nenhum -->
+
+      <div class="form-control"> <!-- Div que agrupa o input e o label -->
+        <input type="text" required> <!-- Campo de texto obrigatório para email ou telefone -->
+        <label>Email ou número do telefone</label> <!-- Rótulo do campo -->
+      </div>
+
+      <div class="form-control"> <!-- Outro campo do formulário -->
+        <input type="password" required> <!-- Campo de senha obrigatório -->
+        <label>Senha</label> <!-- Rótulo do campo -->
+      </div>    
+      
+      <button type="submit">Entrar</button> <!-- Botão para enviar o formulário -->
+
+      <div class="form-ajuda"> <!-- Div com ajuda e opções extras -->
+        <div class="lembre-me"> <!-- Opção "lembrar-me" -->
+          <input type="checkbox" id="lembre-me"> <!-- Caixa de seleção -->
+          <label for="lembre-me">Lembre-me</label> <!-- Texto associado à caixa -->
+        </div>
+        <a href="#">Esqueceu a senha?</a> <!-- Link de ajuda -->
+      </div>
+    </form>
+
+    <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p> <!-- Texto com link para cadastro -->
+    <br>
+    <small>
+      Esta é uma página protegida pelo Google reCAPTCHA para garantir que você não é um robô.
+      <!-- Texto informativo -->
+      <a href="#">Saiba mais.</a> <!-- Link adicional -->
+    </small>
+  </div>
+
+  <!-- partial --> <!-- Comentário do autor -->
+
+</body>
+
+</html>

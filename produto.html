@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Produto</title>
+    <link rel="stylesheet" href="style_antigo.css">
+</head>
+<body>
+    <h1>Cadastro de Produto</h1>
+    <form class="formulario" action="produtocadastrado.html" method="get">
+        <fieldset>
+            <legend>Dados do Produto</legend>
+            <label>Nome do Produto:</label>
+            <br>
+            <input type="text" id="nome" name="nome" required>
+            <br>
+            <label>Marca</label>
+            <br>
+            <input type="text" id="marca" name="marca" required>
+            <br>
+            <label>N° Lote</label>
+            <br>
+            <input type="text" id="lote" name="lote" required>
+            <br>
+            <label>Data de Validade:</label>
+            <br>
+            <input type="date" id="data_validade" name="data_validade" required>
+            <br>
+            <label>Categoria:</label>
+            <br>
+            <select id="categoria" name="categoria" required>
+                <option value="">Selecione</option>
+                <option value="Medicamentos">Medicamentos</option>
+                <option value="Itens de Higene Pessoal">Itens de Higene Pessoal</option>
+                <option value="Vitaminas">Vitaminas</option>
+                <option value="Suplementos">Suplementos</option>
+                <option value="Primeiros Socorros">Primeiros Socorros</option>
+                <option value="Outros">Outros</option>
+            </select>
+            <br>
+            <label>Categoria de Aplicação:</label>
+            <br>
+            <select id="categoriaaplicacao" name="categoriaaplicacao" required>
+                <option value="">Selecione</option>
+                <option value="Medicamentos Controlados">Medicamentos Controlados</option>
+                <option value="Venda Livre">Venda Livre</option>
+                <option value="Cosméticos">Cosméticos</option>
+                <option value="Outros">Outros</option>
+            </select>
+            <br>
+            <label>Forma de Apresentação:</label>
+            <br>
+            <select id="apresentacao" name="apresentacao" required>
+                <option value="">Selecione</option>
+                <option value="Comprimidos">Comprimidos</option>
+                <option value="Gotas">Gotas</option>
+                <option value="Pomadas">Pomadas</option>
+                <option value="Tabletes">Tabletes</option>
+                <option value="Cápsulas">Cápsulas</option>
+                <option value="Xarope">Xarope</option>
+                <option value="Pomada">Pomada</option>
+                <option value="Spray">Spray</option>
+                <option value="Injeção">Injeção</option>
+                <option value="Pó">Pó</option>
+                <option value="Creme">Creme</option>
+                <option value="Gel">Gel</option>
+                <option value="Loção">Loção</option>
+                <option value="Outros">Outros</option>
+            </select>
+            <br>
+            <label>Dosagem:</label>
+            <br>
+            <input type="number" id="dosagem" name="preco" step="1" min="1" required>
+            <select id="unidade_medida" name="unidade_medida" required>
+                <option value="">Selecione</option>
+                <option value="mg">mg</option>
+                <option value="g">g</option>
+                <option value="ml">ml</option>
+                <option value="l">L</option>
+                <option value="unidade">unidade</option>
+                <option value="comprimidos">Comprimidos por dia</option>
+                <option value="vezpdia">Aplicações por dia</option>
+            </select>
+            <br>
+            <label>Volume:</label>
+            <br>
+            <input type="number" id="volume" name="preco" step="1" min="1">
+            <select id="unidade_medida" name="unidade_medida" required>
+                <option value="">Selecione</option>
+                <option value="L">Litros</option>
+                <option value="ml">Mililitros</option>
+                <option value="oz">Onças</option>
+                <option value="N/D">N/D</option>
+            </select>
+            <br>
+            <label>Preço de Compra:</label>
+            <input type="number" id="preco_compra" name="preco_compra" step="0.01" min="0.01" required>
+            <select id="moeda" name="moeda" required>
+                <option value="">Selecione</option>
+                <option value="R$">R$</option>
+                <option value="US$">US$</option>
+                <option value="€">€</option>
+                <option value="£">£</option>
+            </select>
+            <br>
+            <label>Quantidade em Estoque Atual:</label>
+            <br>
+            <input type="number" id="quantidade" name="quantidade" min="1" required>
+            <select id="unidade_medida" name="unidade_medida" required>
+                <option value="">Selecione</option>
+                <option value="mg">mg</option>
+                <option value="g">g</option>
+                <option value="ml">ml</option>
+                <option value="l">L</option>
+                <option value="unidade">unidade</option>
+                <option value="comprimidos">Comprimidos</option>
+            </select>
+            <br>
+            <label>Quantidade em Estoque Mínima:</label>
+            <br>
+            <input type="number" id="quantidade" name="quantidade" min="0" required>
+            <select id="unidade_medida" name="unidade_medida" required>
+                <option value="">Selecione</option>
+                <option value="mg">mg</option>
+                <option value="g">g</option>
+                <option value="ml">ml</option>
+                <option value="l">L</option>
+                <option value="unidade">unidade</option>
+                <option value="comprimidos">Comprimidos</option>
+            </select>
+            <br>
+            <label>Quantidade em Estoque Máxima:</label>
+            <br>
+            <input type="number" id="quantidade" name="quantidade" min="1" required>
+            <select id="unidade_medida" name="unidade_medida" required>
+                <option value="">Selecione</option>
+                <option value="mg">mg</option>
+                <option value="g">g</option>
+                <option value="ml">ml</option>
+                <option value="l">L</option>
+                <option value="unidade">unidade</option>
+                <option value="comprimidos">Comprimidos</option>
+            </select>
+            <br>
+            <br>
+            <a href="produtocadastrado.html">
+                <button>Cadastrar Produto</button>
+            </a>
+        </fieldset>
+    </form>
+    <div class="links">
+        <a href="estoque.html">Ver Estoque</a>
+        <br>
+        <a href="gestao1.html">Voltar para a gestão de estoque</a>
+    </div>
+</body>
+</html>
